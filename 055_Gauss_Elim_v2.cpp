@@ -7,12 +7,12 @@ int main(){
     cin >> temp1;
     const int x_num = temp1;
     double nums[x_num][x_num + 1];
-    cout << "以增广矩阵的形式输入各项系数：" << endl;
+    cout << "输入各项系数：" << endl;
     for (int i = 0; i < x_num; i++){
         for (int j = 0; j < x_num + 1; j++){
             cin >> nums[i][j];
             if (nums[i][j] == 0){
-                cout << "sorry,0 is not aceepted" << endl; //0不会处理，暂时先这样吧
+                cout << "sorry,0 is not aceepted" << endl; //0不会处理，先这样吧
                 return 0;
             }
         }
